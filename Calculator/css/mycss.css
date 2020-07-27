@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('By-Design.jpg');
+    height: 100%;
+}
+
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.nomor {
+    display: grid;
+    width: 51px;
+    height: 50px;
+    font-size: 21px;
+    margin: 2;
+    cursor: pointer;
+    background: rgba(0, 0, 0, .75);
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255);
+    color: white;
+    outline: none;
+}
+
+.nomor:hover {
+    background-color: rgba(15, 243, 255, 0.30);
+}
+
+.textview {
+    width: 216px;
+    height: 70px;
+    margin: 3px;
+    font-size: 17px;
+    padding: 8px;
+    background: rgba(255, 255, 255, .93);
+    color: black;
+    border: 1px solid black;
+    text-align: right;
+}
+
+.haha {
+    border: none;
+    width: 106px;
+    height: 50px;
+    font-size: 24px;
+    background: #03b1ff;
+    color: black;
+    border: 1px solid rgba(255, 255, 255);
+}
+
+.haha:hover {
+    background-color: rgba(15, 243, 255, 0.30);
+}
+
+.span2 {
+    border: none;
+    width: 106px;
+    height: 50px;
+    font-size: 23px;
+    background: #EC2F4B;
+    border: 1px solid rgba(255, 255, 255);
+    color: black;
+}
+
+.span2:hover {
+    background-color: rgba(15, 243, 255, 0.30);
+}

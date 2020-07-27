@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mr.calculator</title>
+        <link rel="stylesheet" href="../css/mycss.css">
+
+
+        <script>
+
+            function masukan(angka){
+                document.form.textview.value = document.form.textview.value+angka;
+            }
+
+            function samadengan(){
+                document.form.textview.value = eval(form.textview.value);
+            }
+
+            function del(){
+                document.form.textview.value = "";
+            }
+
+            function rem(){
+                var ea = document.form.textview.value;
+                document.form.textview.value = ea.substring(0,ea.length-1);
+            }
+        </script>
+
+
+</head>
+<body>
+    <div class="main">
+        <form name="form">
+            <input class="textview" name="textview" readonly="">
+        </form>
+        <table>
+            <tr>
+                <td colspan="2"><input type="button" class="span2" value="AC" onclick="del()"></td>
+                <td><input type="button" class="nomor" value="<" onclick="rem()"></td>
+                <td><input type="button" class="nomor" value=":" onclick="masukan('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="nomor" value="7" onclick="masukan('7')"></td>
+                <td><input type="button" class="nomor" value="8" onclick="masukan('8')"></td>
+                <td><input type="button" class="nomor" value="9" onclick="masukan('9')"></td>
+                <td><input type="button" class="nomor" value="x" onclick="masukan('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="nomor" value="4" onclick="masukan('4')"></td>
+                <td><input type="button" class="nomor" value="5" onclick="masukan('5')"></td>
+                <td><input type="button" class="nomor" value="6" onclick="masukan('6')"></td>
+                <td><input type="button" class="nomor" value="+" onclick="masukan('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="nomor" value="1" onclick="masukan('1')"></td>
+                <td><input type="button" class="nomor" value="2" onclick="masukan('2')"></td>
+                <td><input type="button" class="nomor" value="3" onclick="masukan('3')"></td>
+                <td><input type="button" class="nomor" value="-" onclick="masukan('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="nomor" value="0" onclick="masukan('0')"></td>
+                <td><input type="button" class="nomor" value="." onclick="masukan('.')"></td>
+                <td colspan="2"><input type="button" class="haha" value="=" onclick="samadengan()"></td>
+                </tr>
+        </table>
+    </div>
+</body>
+</html>
